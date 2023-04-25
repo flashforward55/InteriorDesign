@@ -1,37 +1,6 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
- 	/* ======  header-slider   =======*/
-  $(".header-slider").owlCarousel({
-
-	items: 1,
-	loop:true,
-	smartSpeed: 600,
-	margin:5,
-	
-  });
-
-	$('.slider-next').click(function() {
-		$(".header-slider").trigger('next.owl.carousel');
-	});
-	
-	$('.slider-prev').click(function() {
-		$(".header-slider").trigger('prev.owl.carousel');
-	});
-
-	/* ==== Fancybox ===== */
-	Fancybox.bind('[data-fancybox]', {
-		 Thumbs: false,
-		 Toolbar: {
-			display: {
-			left: [],
-			middle: [],
-			right: [ "close"],
-			},
-		},
-	});
-
-	/*animated */
-	var show = true;
+    var show = true;
     var countbox = ".animated-number";
     $(window).on("scroll load resize", function () {
         if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
@@ -50,4 +19,5 @@ $(document).ready(function(){
             show = false;
         }
     });
+
 });
