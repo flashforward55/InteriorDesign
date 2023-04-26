@@ -20,15 +20,15 @@
 </head>
 <body>
 	<!--header  -->
-	<header class="header ">
+	<header class="header">
 		
 		<!-- header-top -->
 		<div class="header-top">
 			<div class="container">
 				<nav class="header-nav">
-					<a class="text-upper"  href="#!">обо мне</a>
-					<a class="text-upper"  href="#!">портфолио</a>
-					<a class="text-upper"  href="#!">контакты</a>
+					<a class="text-upper"  href="#section1">обо мне</a>
+					<a class="text-upper"  href="#section2">портфолио</a>
+					<a class="text-upper"  href="#section3">контакты</a>
 				</nav>
 			</div>
 		</div>
@@ -88,9 +88,9 @@
 	</header>
 	
 	<!-- main -->
-	<main class="main">
+	<main class="main" id="section2">
 		<!--portfolio -->
-		<section class="portfolio ">
+		<section class="portfolio">
 			<div class="container">
 				<div class="portfolio__title">
 					<h2 class="h2">Портфолио</h2>
@@ -139,7 +139,7 @@
 		</section>
 
 		<!--about-->
-		<section class="about">
+		<section class="about" id="section1">
 			<div class="container">
 				<div class="about__title">
 					<h2 class="h2  h2--white">Обо мне</h2>
@@ -171,16 +171,134 @@
 							</div>
 						</div>
 					</div>
-					
-
 
 				</div>
 			</div>
 		</section>
+
+		<!-- contacts -->
+		<section class="contacts" id="section3">
+			<div class="container">
+				<div class="contacts__title">
+					<h2 class="h2">Контакты</h2>
+				</div>
+				<div class="contacts__content">
+					<!-- contacts-form -->
+					<div class="contacts-form-wrapper">
+						<form action="" class="contact-form">
+
+							<div class="form-item">
+								<input class="form-input" type="text"  name="name" placeholder="Ваше имя">
+							</div>
+
+							<div class="form-item">
+								<input class="form-input" type="text"  name="email" placeholder="Ваш email">
+							</div>
+							
+							<div class="form-item">
+								<textarea class="form-textarea"  name="message" placeholder="Сообщение"></textarea>
+							</div>
+
+							<div class="form-item">
+								<button  type="submit" class="btn"> Отправить</button>
+							</div>
+
+						</form>
+					</div>
+					
+					<!-- contacts-list -->
+					<div class="contacts-list">
+						<!-- single item -->
+						<div class="contacts-list__item">
+							<div class="contacts-list__icon">
+								<svg class="svg-phone">
+									<use href="./img/svg-sprite.svg#svg-phone"></use>
+								</svg>
+							</div>
+
+							<div class="contacts-list__text">
+								<p class="text-upper">ТЕЛЕФОН:</p>
+								<a href="tel:89034384466">8 903 438-44-66</a>
+							</div>
+						</div>
+						<!-- single item -->
+						<div class="contacts-list__item">
+							<div class="contacts-list__icon">
+								<svg class="svg-inst">
+									<use href="./img/svg-sprite.svg#svg-inst"></use>
+								</svg>
+							</div>
+
+							<div class="contacts-list__text">
+								<p class="text-upper">INSTAGRAM:</p>
+								<a href="https://www.instagram.com/melisova_studio">melisova_studio</a>
+							</div>
+						</div>
+						<!-- single item -->
+						<div class="contacts-list__item">
+							<div class="contacts-list__icon">
+								<svg class="svg-email">
+									<use href="./img/svg-sprite.svg#svg-email"></use>
+								</svg>
+							</div>
+
+							<div class="contacts-list__text">
+								<p class="text-upper">Почта:</p>
+								<a href="mailto:Melisova@gmail.com">Melisova@gmail.com</a>
+							</div>
+						</div>
+						<!-- single item -->
+						<div class="contacts-list__item">
+							<div class="contacts-list__icon">
+								<svg class="svg-map">
+									<use href="./img/svg-sprite.svg#svg-map"></use>
+								</svg>
+							</div>
+
+							<div class="contacts-list__text">
+								<p class="text-upper">АДРЕС:</p>
+								<p>г. Москва, ул. Мытная, д.7, стр.1</p>
+							</div>
+						</div>
+						<!-- single item -->
+						<div class="contacts-list__item">
+							<div class="contacts-list__icon">
+								<svg class="svg-pin">
+									<use href="./img/svg-sprite.svg#svg-pin"></use>
+								</svg>
+							</div>
+
+							<div class="contacts-list__text">
+								<p class="text-upper">PINTEREST:</p>
+								<a href="www.pinterest.ru/melisova">www.pinterest.ru/melisova</a>
+							</div>
+						</div>
+						<!-- single item -->
+						<div class="contacts-list__item">
+							<div class="contacts-list__icon">
+								<svg class="svg-be">
+									<use href="./img/svg-sprite.svg#svg-be"></use>
+								</svg>
+							</div>
+
+							<div class="contacts-list__text">
+								<p class="text-upper">BEHANCE:</p>
+								<a href="www.behance.net/melisova">www.behance.net/melisova</a>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</section>
+
 	</main>
-	
+
 	<!--footer  -->
-	<footer class="foter"></footer>
+	<footer class="foter">
+		<p> &copy; 2019  Ekaterina Melisova</p>
+	</footer>
 
 	<!-- jquery -->
 	<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
